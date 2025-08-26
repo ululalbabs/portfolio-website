@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ulul Albab</title>
+  <link rel="stylesheet" href="css/win-arm.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css">
+</head>
+</head>
+<body>
+  <header class="header">
+    <button class="close-btn" id="closeBtn" onclick="goBack()">
+      <i class="fa-solid fa-xmark"></i>
+    </button>
+  </header>
+
+  <main class="portfolio">
+    <h1>Win Armwrestling</h1>
+    <section class="gallery">
+      <div class="gallery-item">
+        <img src="assets/images/win-arm/sketch-logo-win-arm.webp" alt="Win Armwrestling" onclick="openLightbox(this)" loading="lazy">
+        <p>Logo Sketch</p>
+      </div>
+      <div class="gallery-item">
+        <img src="assets/images/win-arm/poster-a4.webp" alt="Win Armwrestling" onclick="openLightbox(this)" loading="lazy">
+        <p>Poster</p>
+      </div>
+      <div class="gallery-item">
+        <img src="assets/images/win-arm/after-movie-win-armwrestling.webp" alt="Win Armwrestling"
+            data-video="assets/video/win-arm/After Movie Win Armwrestling 1.webm"
+            onclick="openLightbox(this)" loading="lazy">
+        <p>After Movie</p>
+      </div>
+      <div class="gallery-item">
+        <img src="assets/images/win-arm/desain-kaos-win-arwrestling.webp" alt="Win Armwrestling" onclick="openLightbox(this)" loading="lazy">
+        <p>Design Feed</p>
+      </div>
+      <div class="gallery-item">
+        <img src="assets/images/win-arm/insight-win-arm.webp" alt="Win Armwrestling" onclick="openLightbox(this)" loading="lazy">
+        <p>Insigts</p>
+      </div>
+      <div class="gallery-item">
+        <img src="assets/images/win-arm/sertifikat-01.webp" alt="Win Armwrestling" onclick="openLightbox(this)" loading="lazy">
+        <p>Certificate Design</p>
+      </div>
+      <div class="gallery-item">
+        <img src="assets/images/win-arm/cinematic-trailer-win-arm.webp" alt="Win Armwrestling"
+            data-video="assets/video/win-arm/Cinematic Trailer Win Arm.webm"
+            onclick="openLightbox(this)" loading="lazy">
+        <p>Teaser</p>
+      </div>
+      
+      <!-- Lightbox -->
+      <div class="lightbox" id="lightbox">
+        <div class="lightbox-inner" onclick="event.stopPropagation()">
+          <button class="close" onclick="closeLightbox()" aria-label="Close">
+            <i class="fa-solid fa-xmark"></i>
+          </button>
+          <div id="lightbox-content"></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="js/win-arm.js"></script>
+  
+</body>
+</html>

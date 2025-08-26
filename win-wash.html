@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ulul Albab</title>
+  <link rel="stylesheet" href="css/win-wash.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css">
+</head>
+<body>
+  <header class="header">
+    <button class="close-btn" id="closeBtn" onclick="goBack()">
+      <i class="fa-solid fa-xmark"></i>
+    </button>
+  </header>
+
+  <main class="portfolio">
+    <h1>Win Wash</h1>
+    <section class="gallery">
+      <div class="gallery-item">
+        <img src="assets/images/win-wash/promo-coating-feed.webp" alt="Wash Brand" onclick="openLightbox(this)" loading="lazy">
+        <p>Design Feed</p>
+      </div>
+      <div class="gallery-item">
+        <img src="assets/images/win-wash/pricelist-a4.webp" alt="Wash Brand" onclick="openLightbox(this)" loading="lazy">
+        <p>Poster</p>
+      </div>
+      <div class="gallery-item">
+        <img src="assets/images/win-wash/wax-premium.webp" alt="Karya Siswa"
+            data-video="assets/video/win-wash/Wax Premium.webm"
+            onclick="openLightbox(this)" loading="lazy">
+        <p>Motion Graphic</p>
+      </div>
+      <div class="gallery-item">
+        <img src="assets/images/win-wash/kenapa-win-wash.webp" alt="Wash Brand" onclick="openLightbox(this)" loading="lazy">
+        <p>Design Feed</p>
+      </div>
+      <div class="gallery-item">
+        <img src="assets/images/win-wash/you-drive-we-clean.webp" alt="Karya Siswa"
+            data-video="assets/video/win-wash/You Drive We Clean.webm"
+            onclick="openLightbox(this)" loading="lazy">
+        <p>Motion Graphic</p>
+      </div>
+      <div class="gallery-item">
+        <img src="assets/images/win-wash/insight-win-wash.webp" alt="Wash Brand" onclick="openLightbox(this)" loading="lazy">
+        <p>Insights</p>
+      </div>
+      <div class="gallery-item">
+        <img src="assets/images/win-wash/promo-coating.webp" alt="Karya Siswa"
+            data-video="assets/video/win-wash/Promo Coating.webm"
+            onclick="openLightbox(this)" loading="lazy">
+        <p>Editing Video</p>
+      </div>
+      <div class="gallery-item">
+        <img src="assets/images/win-wash/kata-mereka-tentang-kami.webp" alt="Wash Brand" onclick="openLightbox(this)" loading="lazy">
+        <p>Design Feed</p>
+      </div>
+      <div class="gallery-item">
+        <img src="assets/images/win-wash/premium-wash-2.webp" alt="Karya Siswa"
+            data-video="assets/video/win-wash/Premium Wash 2.webm"
+            onclick="openLightbox(this)" loading="lazy">
+        <p>Motion Graphic</p>
+      </div>
+      <div class="gallery-item">
+        <img src="assets/images/win-wash/cuci-motor-hidrolik,-cuci-salju,-poles.webp" alt="Wash Brand" onclick="openLightbox(this)" loading="lazy">
+        <p>Design Feed</p>
+      </div>
+      <div class="gallery-item">
+        <img src="assets/images/win-wash/cuci-motor-hidrolik.webp" alt="Wash Brand" onclick="openLightbox(this)" loading="lazy">
+        <p>Design Feed</p>
+      </div>
+      <div class="gallery-item">
+        <img src="assets/images/win-wash/jemur-motor.webp" alt="Wash Brand" onclick="openLightbox(this)" loading="lazy">
+        <p>Design Feed</p>
+      </div>
+      
+      <!-- Lightbox -->
+      <div class="lightbox" id="lightbox">
+        <div class="lightbox-inner" onclick="event.stopPropagation()">
+          <button class="close" onclick="closeLightbox()" aria-label="Close">
+            <i class="fa-solid fa-xmark"></i>
+          </button>
+          <div id="lightbox-content"></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="js/win-wash.js"></script>
+  
+</body>
+</html>

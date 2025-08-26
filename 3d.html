@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ulul Albab</title>
+  <link rel="stylesheet" href="css/3d.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css">
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="logo">Ulul Albab</div>
+    <div class="right-wrapper">
+
+      <!-- Dropdown Menu -->
+      <div class="dropdown" id="customDropdown"> 
+        <button type="button" class="dropdown-btn" aria-haspopup="listbox" aria-expanded="false">
+          <span class="label">3D Artist</span>
+          <span class="arrow"><i class="fa-solid fa-chevron-down"></i></span>
+        </button>
+    
+        <ul class="dropdown-list" role="listbox" tabindex="-1">
+          <li role="option" data-value="3d.html" aria-selected="true">3D Artist</li>
+          <li role="option" data-value="brand_designer.html">Brand Designer</li>
+          <li role="option" data-value="tutor.html">Tutor</li>
+        </ul>
+      </div>
+
+      <!-- Shop -->
+      <nav class="right-menu">
+        <a href="https://ululalbabs.gumroad.com/" target="_blank" rel="noopener noreferrer" class="shop">Shop</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- TurboSquid Section -->
+  <section class="turbosquid-section">
+    <div class="turbosquid-left">
+      <h2>Sell 3D Models on</h2>
+      <a href="https://www.turbosquid.com/Search/Artists/Ulul-Albab" target="_blank" rel="noopener noreferrer" class="btn">TurboSquid</a>
+    </div>
+    <div class="turbosquid-right">
+      <canvas id="threeCanvas"></canvas>
+    </div>
+  </section>
+  
+  <div class="garis-shadow"></div>
+
+  <!-- Projects Section -->
+  <section class="projects-section">
+    <h2 class="section-title">Works</h2>
+    <div class="gallery">
+      <div class="gallery-item">
+        <a href="icon-project.html">
+          <img src="assets/images/Icon-Project/10-icon-thumbnail.webp" alt="10 Icon" loading="lazy">
+          <div class="caption">10 Icon Project</div>
+        </a>
+      </div>
+      <div class="gallery-item">
+        <a href="https://youtube.com/playlist?list=PLcfsGFGbNzD45FsrwKWbdQU-wWbZuZZtR" target="_blank" rel="noopener noreferrer">
+          <div class="iframe-wrapper">
+            <iframe 
+              src="https://www.youtube.com/embed/videoseries?list=PLcfsGFGbNzD45FsrwKWbdQU-wWbZuZZtR" 
+              frameborder="0" loading="lazy">
+            </iframe>
+          <div class="overlay"></div>
+          </div>
+          <div class="caption">Blender Tutorial</div>
+        </a>
+      </div>
+      <div class="gallery-item">
+        <a href="esports-events.html">
+          <img src="assets/images/esports-events/virtual-studio-2.webp" alt="Esports Events" loading="lazy">
+          <div class="caption">Esports Events</div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Floating Contact Button -->
+  <div class="contact-wrapper" id="contactWrapper" aria-label="Contact Me">
+    <button id="contactBtn" class="contact-button" aria-haspopup="true" aria-expanded="false" aria-controls="contactIcons">
+      <i class="fa-solid fa-comment"></i>
+    </button>
+    <div class="contact-icons" id="contactIcons">
+      <a href="mailto:albabgraff@gmail.com" title="Email">
+        <i class="fa-regular fa-envelope"></i>
+      </a>
+      <a href="https://wa.me/6281228276218" target="_blank" rel="noopener noreferrer" title="WhatsApp">
+        <i class="fa-brands fa-whatsapp"></i>
+      </a>
+      <a href="https://instagram.com/ululalbabs" target="_blank" rel="noopener noreferrer" title="Instagram">
+        <i class="fa-brands fa-instagram"></i>
+      </a>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/three@0.153.0/build/three.min.js"></script>
+  <script src="js/3d.js"></script>
+
+</body>
+</html>

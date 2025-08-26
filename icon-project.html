@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ulul Albab</title>
+  <link rel="stylesheet" href="css/icon-project.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css">
+</head>
+<body>
+  <header class="header">
+    <button class="close-btn" id="closeBtn" onclick="goBack()">
+      <i class="fa-solid fa-xmark"></i>
+    </button>
+  </header>
+
+  <main class="portfolio">
+    <h1>10 Icon Project</h1>
+    <section class="gallery">
+      <div class="gallery-item">
+        <img src="assets/images/icon-project/automotive-0035.webp" alt="Ten Icon" onclick="openLightbox(this)" loading="lazy">
+        <p>Automotive Icon</p>
+      </div>
+      <div class="gallery-item">
+        <img src="assets/images/icon-project/10-icon-pack-thumbnail.webp" alt="Ten Icon"
+            data-video="assets/video/icon-project/10-icon-packs.mp4"
+            onclick="openLightbox(this)" loading="lazy">
+        <p>All Icon</p>
+      </div>
+      <div class="gallery-item">
+        <img src="assets/images/icon-project/digital-marketing-icon.webp" alt="Ten Icon"
+            data-video="assets/video/icon-project/digital-marketing-icon.mp4"
+            onclick="openLightbox(this)" loading="lazy">
+        <p>Digital Marketing</p>
+      </div>
+      <div class="gallery-item">
+        <img src="assets/images/icon-project/kitchen.webp" alt="Ten Icon" onclick="openLightbox(this)" loading="lazy">
+        <p>Kitchen</p>
+      </div>
+      <div class="gallery-item">
+        <img src="assets/images/icon-project/game.webp" alt="Ten Icon"
+            data-video="assets/video/icon-project/game.mp4"
+            onclick="openLightbox(this)" loading="lazy">
+        <p>Game Icon</p>
+      </div>
+      <div class="gallery-item">
+        <img src="assets/images/icon-project/multimedia.webp" alt="Ten Icon" onclick="openLightbox(this)" loading="lazy">
+        <p>Multimedia Icon</p>
+      </div>
+      <div class="gallery-item">
+        <img src="assets/images/icon-project/automotive.webp" alt="Ten Icon"
+            data-video="assets/video/icon-project/automotive.mp4"
+            onclick="openLightbox(this)" loading="lazy">
+        <p>Automotive Icon</p>
+      </div>
+      <div class="gallery-item">
+        <img src="assets/images/icon-project/multimedia-thumbnail.webp" alt="Ten Icon"
+            data-video="assets/video/icon-project/multimedia.mp4"
+            onclick="openLightbox(this)" loading="lazy">
+        <p>Multimedia Icon</p>
+      </div>
+      <div class="gallery-item">
+        <img src="assets/images/icon-project/digital-marketing.webp" alt="Ten Icon"
+            data-video="assets/video/icon-project/digital-marketing.mp4"
+            onclick="openLightbox(this)" loading="lazy">
+        <p>Digital Marketing</p>
+      </div>
+      <div class="gallery-item">
+        <img src="assets/images/icon-project/10-icon-thumbnail.webp" alt="Ten Icon" onclick="openLightbox(this)" loading="lazy">
+        <p>10 Icon Packs</p>
+      </div>
+      <div class="gallery-item">
+        <img src="assets/images/icon-project/ramadan-icon.webp" alt="Ten Icon"
+            data-video="assets/video/icon-project/ramadan-icon.mp4"
+            onclick="openLightbox(this)" loading="lazy">
+        <p>Ramadan Icon</p>
+      </div>
+      <div class="gallery-item">
+        <img src="assets/images/icon-project/social-media-element.webp" alt="Ten Icon"
+            data-video="assets/video/icon-project/social-media-element-icon.mp4"
+            onclick="openLightbox(this)" loading="lazy">
+        <p>Campfire</p>
+      </div>
+      <div class="gallery-item">
+        <img src="assets/images/icon-project/education.webp" alt="Ten Icon"
+            data-video="assets/video/icon-project/education.mp4"
+            onclick="openLightbox(this)" loading="lazy">
+        <p>Education Icon</p>
+      </div>
+      <div class="gallery-item">
+        <img src="assets/images/icon-project/technology.webp" alt="Ten Icon"
+            data-video="assets/video/icon-project/technology.mp4"
+            onclick="openLightbox(this)" loading="lazy">
+        <p>Technology Icon</p>
+      </div>
+      <div class="gallery-item">
+        <img src="assets/images/icon-project/sport.webp" alt="Ten Icon"
+            data-video="assets/video/icon-project/sport.mp4"
+            onclick="openLightbox(this)" loading="lazy">
+        <p>Sport Icon</p>
+      </div>
+      <div class="gallery-item">
+        <img src="assets/images/icon-project/kitchen-thumn.webp" alt="Ten Icon"
+            data-video="assets/video/icon-project/kitchen_1.mp4"
+            onclick="openLightbox(this)" loading="lazy">
+        <p>Kitchen Icon</p>
+      </div>
+      <div class="gallery-item">
+        <img src="assets/images/icon-project/social-media.webp" alt="Ten Icon"
+            data-video="assets/video/icon-project/social-media.mp4"
+            onclick="openLightbox(this)" loading="lazy">
+        <p>Social Media Icon</p>
+      </div>
+      <div class="gallery-item">
+        <img src="assets/images/icon-project/game-0060.webp" alt="Ten Icon" onclick="openLightbox(this)" loading="lazy">
+        <p>Game Icon</p>
+      </div>
+      <div class="gallery-item">
+        <img src="assets/images/icon-project/education-icon.webp" alt="Ten Icon"
+            data-video="assets/video/icon-project/education-icon.mp4"
+            onclick="openLightbox(this)" loading="lazy">
+        <p>Education Icon</p>
+      </div>
+      <div class="gallery-item">
+        <img src="assets/images/icon-project/ramadan.webp" alt="Ten Icon"
+            data-video="assets/video/icon-project/ramadan.mp4"
+            onclick="openLightbox(this)" loading="lazy">
+        <p>Ramadan Icon</p>
+      </div>
+      
+      <!-- Lightbox -->
+      <div class="lightbox" id="lightbox">
+        <div class="lightbox-inner" onclick="event.stopPropagation()">
+          <button class="close" onclick="closeLightbox()" aria-label="Close">
+            <i class="fa-solid fa-xmark"></i>
+          </button>
+          <div id="lightbox-content"></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="js/icon-project.js"></script>
+  
+</body>
+</html>

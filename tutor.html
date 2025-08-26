@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ulul Albab</title>
+  <link rel="stylesheet" href="css/tutor.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css">
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="logo">Ulul Albab</div>
+    <div class="right-wrapper">
+
+      <!-- Dropdown Menu -->
+      <div class="dropdown" id="customDropdown"> 
+        <button type="button" class="dropdown-btn" aria-haspopup="listbox" aria-expanded="false">
+          <span class="label">Tutor</span>
+          <span class="arrow"><i class="fa-solid fa-chevron-down"></i></span>
+        </button>
+    
+        <ul id="dropdownList" class="dropdown-list" role="listbox" tabindex="-1">
+          <li role="option" data-value="3d.html">3D Artist</li>
+          <li role="option" data-value="brand_designer.html">Brand Designer</li>
+          <li role="option" data-value="tutor.html" aria-selected="true">Tutor</li>
+        </ul>
+      </div>
+
+      <!-- Shop -->
+      <nav class="right-menu">
+        <a href="https://ululalbabs.gumroad.com/" target="_blank" rel="noopener noreferrer" class="shop">Shop</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Section karya-siswa -->
+  <section class="student-section">
+    <div class="student-left">
+      <h2>Karya Siswa</h2>
+      <div class="arrow-down">
+      <i class="fa-solid fa-arrow-right"></i>
+    </div>
+    </div>
+    <div class="student-right">
+      <div class="gallery">
+        <div class="gallery-item">
+          <img src="assets/images/karya-siswa/afan.webp" alt="karya-siswa" onclick="openLightbox(this)" loading="lazy">
+          <p>Afan</p>
+        </div>
+        <div class="gallery-item">
+          <img src="assets/images/karya-siswa/angelina.webp" alt="karya-siswa"
+            data-video="assets/Video/karya-siswa/Angelina.webm"
+            onclick="openLightbox(this)" loading="lazy">
+          <p>Angelina</p>
+        </div>
+        <div class="gallery-item">
+          <img src="assets/images/karya-siswa/bimbi.webp" alt="karya-siswa" onclick="openLightbox(this)" loading="lazy">
+          <p>Bimbi</p>
+        </div>
+        <div class="gallery-item">
+          <img src="assets/images/karya-siswa/dhevon.webp" alt="karya-siswa" onclick="openLightbox(this)" loading="lazy">
+          <p>Dhevon</p>
+        </div>
+        <div class="gallery-item">
+          <img src="assets/images/karya-siswa/farel.webp" alt="karya-siswa" onclick="openLightbox(this)" loading="lazy">
+          <p>Farel</p>
+        </div>
+        <div class="gallery-item">
+          <img src="assets/images/karya-siswa/fatihah.webp" alt="karya-siswa" onclick="openLightbox(this)" loading="lazy">
+          <p>Fatihah</p>
+        </div>
+        <div class="gallery-item">
+          <img src="assets/images/karya-siswa/gagah.webp" alt="karya-siswa" onclick="openLightbox(this)" loading="lazy">
+          <p>Gagah</p>
+        </div>
+        <div class="gallery-item">
+          <img src="assets/images/karya-siswa/garyn.webp" alt="karya-siswa" onclick="openLightbox(this)" loading="lazy">
+          <p>Garyn</p>
+        </div>
+        <div class="gallery-item">
+          <img src="assets/images/karya-siswa/gwen.webp" alt="karya-siswa"
+            data-video="assets/Video/karya-siswa/Gwen.webm"
+            onclick="openLightbox(this)" loading="lazy">
+          <p>Gwen</p>
+        </div>
+        <div class="gallery-item">
+          <img src="assets/images/karya-siswa/hasbi.webp" alt="karya-siswa" onclick="openLightbox(this)" loading="lazy">
+          <p>Hasbi</p>
+        </div>
+        <div class="gallery-item">
+          <img src="assets/images/karya-siswa/miant.webp" alt="karya-siswa" onclick="openLightbox(this)" loading="lazy">
+          <p>Miant</p>
+        </div>
+        <div class="gallery-item">
+          <img src="assets/images/karya-siswa/michael.webp" alt="karya-siswa"
+            data-video="assets/video/karya-siswa/Michael.webm"
+            onclick="openLightbox(this)" loading="lazy">
+          <p>Michael</p>
+        </div>
+        <div class="gallery-item">
+          <img src="assets/images/karya-siswa/nelson.webp" alt="karya-siswa" onclick="openLightbox(this)" loading="lazy">
+          <p>Nelson</p>
+        </div>
+        <div class="gallery-item">
+          <img src="assets/images/karya-siswa/rach.webp" alt="karya-siswa"onclick="openLightbox(this)" loading="lazy">
+          <p>Rach</p>
+        </div>
+        <div class="gallery-item">
+          <img src="assets/images/karya-siswa/rito.webp" alt="karya-siswa" onclick="openLightbox(this)" loading="lazy">
+          <p>Rito</p>
+        </div>
+        <div class="gallery-item">
+          <img src="assets/images/karya-siswa/tsania.webp" alt="karya-siswa"
+            data-video="assets/Video/karya-siswa/Tsania.webm"
+            onclick="openLightbox(this)" loading="lazy">
+          <p>Tsania</p>
+        </div>
+        <div class="gallery-item">
+          <img src="assets/images/karya-siswa/vita.webp" alt="karya-siswa" onclick="openLightbox(this)" loading="lazy">
+          <p>Vita</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Lightbox -->
+  <div class="lightbox" id="lightbox">
+    <div class="lightbox-inner" onclick="event.stopPropagation()">
+      <button class="close" onclick="closeLightbox()" aria-label="Close">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+      <div id="lightbox-content"></div>
+    </div>
+  </div>
+
+
+  <!-- Floating Contact Button -->
+  <div class="contact-wrapper" id="contactWrapper" aria-label="Contact Me">
+    <button id="contactBtn" class="contact-button" aria-haspopup="true" aria-expanded="false" aria-controls="contactIcons">
+      <i class="fa-solid fa-comment"></i>
+    </button>
+    <div class="contact-icons" id="contactIcons">
+      <a href="mailto:albabgraff@gmail.com" title="Email">
+        <i class="fa-regular fa-envelope"></i>
+      </a>
+      <a href="https://wa.me/6281228276218" target="_blank" rel="noopener noreferrer" title="WhatsApp">
+        <i class="fa-brands fa-whatsapp"></i>
+      </a>
+      <a href="https://instagram.com/ululalbabs" target="_blank" rel="noopener noreferrer" title="Instagram">
+        <i class="fa-brands fa-instagram"></i>
+      </a>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/three@0.153.0/build/three.min.js"></script>
+  <script src="js/tutor.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ulul Albab</title>
+  <link rel="stylesheet" href="css/kopi-win.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css">
+</head>
+<body>
+  <header class="header">
+    <button class="close-btn" id="closeBtn" onclick="goBack()">
+      <i class="fa-solid fa-xmark"></i>
+    </button>
+  </header>
+
+  <main class="portfolio">
+    <h1>Kopi Win</h1>
+    <section class="gallery">
+      <div class="gallery-item">
+        <img src="assets/images/kopi-win/logo_kopiwin-(1).webp" alt="Kopi Win" onclick="openLightbox(this)" loading="lazy">
+        <p>Logo Design</p>
+      </div>
+      <div class="gallery-item">
+        <img src="assets/images/kopi-win/logo_kopiwin-(2).webp" alt="Kopi Win" onclick="openLightbox(this)" loading="lazy">
+        <p>Logo Design</p>
+      </div>
+      <div class="gallery-item">
+        <img src="assets/images/kopi-win/indonesia-juni.webp" alt="Kopi Win"
+            data-video="assets/video/kopi-win/Indonesia Juni.webm"
+            onclick="openLightbox(this)" loading="lazy">
+        <p>Motion Graphic</p>
+      </div>
+      <div class="gallery-item">
+        <img src="assets/images/kopi-win/logo_kopiwin-(3).webp" alt="Kopi Win" onclick="openLightbox(this)" loading="lazy">
+        <p>Logo Design</p>
+      </div>
+      <div class="gallery-item">
+        <img src="assets/images/kopi-win/insight-kopi-win.webp" alt="Kopi Win" onclick="openLightbox(this)" loading="lazy">
+        <p>Insights</p>
+      </div>
+      <div class="gallery-item">
+        <img src="assets/images/kopi-win/its-coffee-time.webp" alt="Kopi Win"
+            data-video="assets/video/kopi-win/Its Coffee Time.webm"
+            onclick="openLightbox(this)" loading="lazy">
+        <p>Motion Graphic</p>
+      </div>
+      <div class="gallery-item">
+        <img src="assets/images/kopi-win/live-music-saturday-night.webp" alt="Kopi Win"
+            data-video="assets/video/kopi-win/Live Music Saturday Night 2.webm"
+            onclick="openLightbox(this)" loading="lazy">
+        <p>Motion Graphic</p>
+      </div>
+      <div class="gallery-item">
+        <img src="assets/images/kopi-win/paket-nongkrong-live-music-story.webp" alt="Kopi Win" onclick="openLightbox(this)" loading="lazy">
+        <p>Story Design</p>
+      </div>
+      <div class="gallery-item">
+        <img src="assets/images/kopi-win/paket-teman-win.webp" alt="Kopi Win" onclick="openLightbox(this)" loading="lazy">
+        <p>Feed Design</p>
+      </div>
+      <div class="gallery-item">
+        <img src="assets/images/kopi-win/pilih-minuman.webp" alt="Kopi Win" onclick="openLightbox(this)" loading="lazy">
+        <p>Feed Design</p>
+      </div>
+      <div class="gallery-item">
+        <img src="assets/images/kopi-win/promo-nobar-story.webp" alt="Kopi Win" onclick="openLightbox(this)" loading="lazy">
+        <p>Story Design</p>
+      </div>
+      <div class="gallery-item">
+        <img src="assets/images/kopi-win/teh-tarik-dingin.webp" alt="Kopi Win" onclick="openLightbox(this)" loading="lazy">
+        <p>Feed Design</p>
+      </div>
+      <div class="gallery-item">
+        <img src="assets/images/kopi-win/kopi-butter-&-roti-coklat_keju.webp" alt="Kopi Win" onclick="openLightbox(this)" loading="lazy">
+        <p>Feed Design</p>
+      </div>
+      
+      <!-- Lightbox -->
+      <div class="lightbox" id="lightbox">
+        <div class="lightbox-inner" onclick="event.stopPropagation()">
+          <button class="close" onclick="closeLightbox()" aria-label="Close">
+            <i class="fa-solid fa-xmark"></i>
+          </button>
+          <div id="lightbox-content"></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="js/kopi-win.js"></script>
+  
+</body>
+</html>

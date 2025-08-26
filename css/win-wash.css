@@ -1,0 +1,222 @@
+body {
+  margin: 0;
+  font-family: 'Open Sans', sans-serif;
+  background: #000;
+  color: #fff;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Background Grid + Mask (browser support: Chrome, Safari, Edge) */
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+
+  background-image:
+    repeating-linear-gradient(
+      to right,
+      rgba(255, 255, 255, 0.25) 0px,
+      rgba(255, 255, 255, 0.25) 1px,
+      transparent 1px,
+      transparent 40px
+    ),
+    repeating-linear-gradient(
+      to bottom,
+      rgba(255, 255, 255, 0.25) 0px,
+      rgba(255, 255, 255, 0.25) 1px,
+      transparent 1px,
+      transparent 40px
+    );
+  background-color: #000;
+
+  -webkit-mask-image: radial-gradient(circle at center, rgba(0,0,0,0.5) 50%, rgba(0,0,0,0.2) 75%);
+  -webkit-mask-repeat: no-repeat;
+  -webkit-mask-position: center;
+  -webkit-mask-size: cover;
+
+  mask-image: radial-gradient(circle at center, rgba(0,0,0,0.5) 50%, rgba(0,0,0,0.2) 75%);
+  mask-repeat: no-repeat;
+  mask-position: center;
+  mask-size: cover;
+
+  z-index: -1;
+}
+
+/* Fallback untuk browser tanpa mask-image (misalnya Firefox) */
+@supports not (mask-image: radial-gradient(circle, black, transparent)) {
+  body::after {
+    content: "";
+    position: fixed;
+    inset: 0;
+    background: radial-gradient(
+      circle at center,
+      rgba(0, 0, 0, 0) 60%,
+      rgba(0, 0, 0, 0.8) 100%
+    );
+    pointer-events: none;
+    z-index: -1;
+  }
+}
+
+/* Header */
+.header {
+  display: flex;
+  justify-content: flex-end;
+  padding: 20px;
+}
+
+.close-btn {
+  background: none;
+  border: none;
+  font-size: 2rem;
+  cursor: pointer;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Judul */
+.portfolio h1 {
+  text-align: center;
+  margin: 10px 0 40px;  /* 🔥 presisi, tidak pakai top:-30px */
+}
+
+/* === Gallery === */
+.gallery {
+  column-count: 5;
+  column-gap: 20px;
+  max-width: 80%;
+  margin: 0 auto;
+  position: relative;
+}
+
+.gallery-item {
+  display: block;      
+  width: 100%;
+  margin-bottom: 20px;
+  break-inside: avoid;
+  border-radius: 10px;
+  overflow: hidden;
+  background: rgba(255,255,255,0.05);
+  position: relative;
+}
+
+.gallery-item img,
+.gallery-item video {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 10px;
+  cursor: pointer;
+  object-fit: cover;    /* 🔥 biar rapi */
+  transition: transform 0.3s ease-in-out;
+}
+
+.gallery-item:hover img,
+.gallery-item:hover video {
+  transform: scale(1.08);
+}
+
+.gallery-item p {
+  position: absolute;
+  bottom: 8px;
+  right: 12px;
+  margin: 0;
+  padding: 4px 8px;
+  font-size: 0.85rem;
+  background: rgba(0,0,0,0.65);
+  color: #fff;
+  border-radius: 6px;
+}
+
+/* Lightbox Background */
+.lightbox {
+  display: none;
+  position: fixed;
+  z-index: 9999;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: rgba(0,0,0,0.85);
+  justify-content: center;
+  align-items: center;
+  animation: fadeIn 0.3s ease;
+}
+
+/* Kontainer isi */
+.lightbox-inner {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 0 20px rgba(0,0,0,0.6);
+}
+
+/* Gambar & Video */
+.lightbox img,
+.lightbox video {
+  border-radius: 8px;
+  z-index: 998;
+  max-height: 80vh; 
+  max-width: 80vw; 
+  object-fit: contain;   /* 🔥 biar tidak ketarik */
+}
+
+/* Tombol Close */
+.lightbox .close {
+  position: absolute;
+  top: -16px;
+  right: -12px;
+  width: 36px;
+  height: 36px;
+  background: #fff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+  transition: background 0.3s, transform 0.2s;
+  z-index: 1000;
+  border: none;
+  padding: 0;
+}
+
+.lightbox .close i {
+  font-size: 18px;
+  color: #000;
+  pointer-events: none;
+}
+
+.lightbox .close:hover {
+  background: #eee;
+  transform: scale(1.1);
+}
+
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+/* ===== Responsif untuk Tab ===== */
+
+@media (max-width: 900px) {
+  .gallery {
+    column-count: 3;
+    max-width: 95%;
+  }
+  
+  .lightbox img,
+  .lightbox video {
+    max-width: 90vw;
+    max-height: 70vh;
+  }
+}
+
+/* ===== Responsif untuk hP ===== */
+@media (max-width: 600px) {
+  .gallery {
+    column-count: 2;
+  }
+}

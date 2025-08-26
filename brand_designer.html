@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ulul Albab</title>
+  <link rel="stylesheet" href="css/bd.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css">
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="logo">Ulul Albab</div>
+    <div class="right-wrapper">
+
+      <!-- Dropdown Menu -->
+      <div class="dropdown" id="customDropdown"> 
+        <button type="button" class="dropdown-btn" aria-haspopup="listbox" aria-expanded="false">
+          <span class="label">Brand Designer</span>
+          <span class="arrow"><i class="fa-solid fa-chevron-down"></i></span>
+        </button>
+    
+        <ul id="dropdownList" class="dropdown-list" role="listbox" tabindex="-1">
+          <li role="option" data-value="3d.html">3D Artist</li>
+          <li role="option" data-value="brand_designer.html" aria-selected="true">Brand Designer</li>
+          <li role="option" data-value="tutor.html">Tutor</li>
+        </ul>
+      </div>
+
+      <!-- Shop -->
+      <nav class="right-menu">
+        <a href="https://ululalbabs.gumroad.com/" target="_blank" rel="noopener noreferrer" class="shop">Shop</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="gallery">
+    <div class="gallery-item">
+      <a href="win-wash.html">
+        <img src="assets/images/win-wash/logo-win-wash.webp" alt="Win Wash" loading="lazy">
+        <div class="caption">Win Wash</div>
+      </a>
+    </div>
+    <div class="gallery-item">
+      <a href="kopi-win.html">
+        <img src="assets/images/kopi-win/logo-kopi-win.webp" alt="Kopi Win" loading="lazy">
+        <div class="caption">Kopi Win</div>
+      </a>
+    </div>
+    <div class="gallery-item">
+      <a href="cowin-laundry.html">
+        <img src="assets/images/cowin-laundry/logo-cowin-laundry.webp" alt="Cowin Laundry" loading="lazy">
+        <div class="caption">CoWin Laundry</div>
+      </a>
+    </div>
+    <div class="gallery-item">
+      <a href="win-arm.html">
+        <img src="assets/images/win-arm/logo-win-arm.webp" alt="Win Armwrestling" loading="lazy">
+        <div class="caption">Win Armwrestling</div>
+      </a>
+    </div>
+  </section>
+
+  <div class="contact-wrapper" id="contactWrapper" aria-label="Contact Me">
+    <button id="contactBtn" class="contact-button" aria-haspopup="true" aria-expanded="false" aria-controls="contactIcons">
+      <i class="fa-solid fa-comment"></i>
+    </button>
+    <div class="contact-icons" id="contactIcons">
+      <a href="mailto:albabgraff@gmail.com" title="Email">
+        <i class="fa-regular fa-envelope"></i>
+      </a>
+      <a href="https://wa.me/6281228276218" target="_blank" rel="noopener noreferrer" title="WhatsApp">
+        <i class="fa-brands fa-whatsapp"></i>
+      </a>
+      <a href="https://instagram.com/ululalbabs" target="_blank" rel="noopener noreferrer" title="Instagram">
+        <i class="fa-brands fa-instagram"></i>
+      </a>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/three@0.153.0/build/three.min.js"></script>
+  <script src="js/bd.js"></script>
+  
+</body>
+</html>

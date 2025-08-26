@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ulul Albab</title>
+  <link rel="stylesheet" href="css/cowin-laundry.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css">
+</head>
+<body>
+  <header class="header">
+    <button class="close-btn" id="closeBtn" onclick="goBack()">
+      <i class="fa-solid fa-xmark"></i>
+    </button>
+  </header>
+
+  <main class="portfolio">
+    <h1>CoWin Laundry</h1>
+    <section class="gallery">
+      <div class="gallery-item">
+        <img src="assets/images/cowin-laundry/10k-coin.webp" alt="Wash Brand" onclick="openLightbox(this)" loading="lazy">
+        <p>Feed Design</p>
+      </div>
+      <div class="gallery-item">
+        <img src="assets/images/cowin-laundry/3d-booth.webp" alt="Wash Brand" onclick="openLightbox(this)" loading="lazy">
+        <p>3D</p>
+      </div>
+      <div class="gallery-item">
+        <img src="assets/images/cowin-laundry/coin-laundry.webp" alt="Karya Siswa"
+            data-video="assets/video/cowin-laundry/coin-laundry.webm"
+            onclick="openLightbox(this)" loading="lazy">
+        <p>Editing Video</p>
+      </div>
+      <div class="gallery-item">
+        <img src="assets/images/cowin-laundry/banner-01.webp" alt="Wash Brand" onclick="openLightbox(this)" loading="lazy">
+        <p>Banner</p>
+      </div>
+      <div class="gallery-item">
+        <img src="assets/images/cowin-laundry/cara-kerja-01.webp" alt="Wash Brand" onclick="openLightbox(this)" loading="lazy">
+        <p>Feed Design</p>
+      </div>
+      <div class="gallery-item">
+        <img src="assets/images/cowin-laundry/logo-cowin-laundry-01.webp" alt="Wash Brand" onclick="openLightbox(this)" loading="lazy">
+        <p>Logo Design</p>
+      </div>
+      <div class="gallery-item">
+        <img src="assets/images/cowin-laundry/x-banner-01.webp" alt="Wash Brand" onclick="openLightbox(this)" loading="lazy">
+        <p>X-Banner</p>
+      </div>
+      <div class="gallery-item">
+        <img src="assets/images/cowin-laundry/logo-cowin-laundry-04.webp" alt="Wash Brand" onclick="openLightbox(this)" loading="lazy">
+        <p>Logo Design</p>
+      </div>
+      </div>
+      <div class="gallery-item">
+        <img src="assets/images/cowin-laundry/open-today-01.webp" alt="Wash Brand" onclick="openLightbox(this)" loading="lazy">
+        <p>Feed Design</p>
+      </div>
+      <div class="gallery-item">
+        <img src="assets/images/cowin-laundry/welcome-01.webp" alt="Wash Brand" onclick="openLightbox(this)" loading="lazy">
+        <p>Feed Design</p>
+      </div>
+      <div class="gallery-item">
+        <img src="assets/images/cowin-laundry/x-banner-coin-laundry-01.webp" alt="Wash Brand" onclick="openLightbox(this)" loading="lazy">
+        <p>X-Banner</p>
+      </div>
+
+      <!-- Lightbox -->
+      <div class="lightbox" id="lightbox">
+        <div class="lightbox-inner" onclick="event.stopPropagation()">
+          <button class="close" onclick="closeLightbox()" aria-label="Close">
+            <i class="fa-solid fa-xmark"></i>
+          </button>
+          <div id="lightbox-content"></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="js/cowin-laundry.js"></script>
+  
+</body>
+</html>
